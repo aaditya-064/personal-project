@@ -1,13 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const images = ["/public/sami1.png", "/public/sami2.png", "/public/sami3.png"];
+const images = ["/sami1.png", "/sami2.png", "/sami3.png"];
 
-const images2 = [
-  "/public/aaditya1.jpg",
-  "/public/aaditya2.jpg",
-  "/public/aaditya3.jpg",
-];
+const images2 = ["/aaditya1.jpg", "/aaditya2.jpg", "/aaditya3.jpg"];
 
 function Memories() {
   return (
