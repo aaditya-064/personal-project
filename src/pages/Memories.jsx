@@ -1,9 +1,42 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const images = ["/sami1.png", "/sami2.png", "/sami3.png"];
+const images = [
+  "/sami1.png",
+  "/sami2.png",
+  "/sami3.png",
+  "/sami4.jpg",
+  "/sami5.png",
+  "/sami6.jpg",
+  "/sami7.jpg",
+  "/sami8.jpg ",
+  "/sami9.png",
+  "/sami10.png",
+  "/sami11.png",
+  "/sami12.png",
+  "/sami13.jpg",
+  "/sami14.jpg",
+  "/sami15.jpg",
+  "/sami16.jpg",
+  "/sami17.jpg",
+  "/sami18.jpg",
+];
 
-const images2 = ["/aaditya1.jpg", "/aaditya2.jpg", "/aaditya3.jpg"];
+const images2 = [
+  "/aaditya1.jpg",
+  "/aaditya2.jpg",
+  "/aaditya3.jpg",
+  "/aaditya4.jpg",
+  "/aaditya5.jpg",
+  "/aaditya6.jpg",
+  "/aaditya9.jpg",
+  "/aaditya10.jpg",
+  "/aaditya11.jpg",
+  "/aaditya12.jpg",
+  "/aaditya13.jpg",
+  "/aaditya14.jpg",
+  "/aaditya15.jpg",
+];
 
 function Memories() {
   return (
@@ -22,10 +55,10 @@ function Memories() {
           />
         ))}
       </div>
-
+      <div className="mt-10"></div>
       <Link
         to="/letter"
-        className="mt-6 text-white bg-blue-500 w-1/5 p-2 rounded underline hover:opacity-80 transition-all"
+        className="text-white bg-blue-500 w-1/5 p-2 rounded underline hover:opacity-80 transition-all"
       >
         Read My Letter
       </Link>

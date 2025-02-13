@@ -1,22 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const message = "";
+const message =
+  "Soorrrrryyyyyyyy my princesss, timi eklo yesto manxey hau mero life ma jo sanga bolda ma harek moment happy hunxu, no matter what. I'm always waiting for you messages. You're always in my head. Timi aayesi I've been a lot more happier than I was. Never thought I would find someone who takes care of me like this (sayad garxau hola, ma bhram ma ni hunxa sakxu 😒). Aba mero side bata you're more than a friend to me. You mean soooooooo much to me. I'm always afraid ki timi ma bata bored hunxau ani you'll stop talking, insecurity at it's peak, tei ni aba k garammmm. K GARUUUU, ma k garuuuu. MAYALUUUUUUUUU, narisauuuuu naaaaa...";
 
 function Letter() {
-  const [text, setText] = useState(
-    "Sorryyyy my princesss, timi eklo yesto manxey hau mero life ma jo sanga bolda ma harek moment happy hunxu, no matter what. I'm always waiting for you messages. You're always in my head. Timi aayesi I've been a lot more happier than I was. Never thought I would find someone who takes care of me like this (sayad garxau hola, ma bhram ma ni hunxa sakxu 😒). Aba mero side bata you're more than a friend to me. You mean soooooooo much to me. I'm always afraid ki timi ma bata bored hunxau ani you'll stop talking, insecurity at it's peak, tei ni aba k garammmm. K GARUUUU, ma k garuuuu. MAYALUUUUUUUUU, narisauuuuu naaaaa."
-  );
+  const [text, setText] = useState(""); // Start with an empty string
+
   useEffect(() => {
     let i = 0;
+    setText(""); // Ensure text starts empty
     const interval = setInterval(() => {
       if (i < message.length) {
-        setText((prev) => prev + message[i]);
+        setText((prev) => prev + message.charAt(i)); // Use charAt(i) safely
         i++;
       } else {
         clearInterval(interval);
       }
-    }, 100);
+    }, 40);
+
+    return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
   return (
